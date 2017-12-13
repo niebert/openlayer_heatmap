@@ -56,6 +56,7 @@ function getMarkerString(pNr,pRec) {
       if (pRec.summary != "") {
         vOut +="<br>";
         vOut += pRec.summary.replace(/"/g,'\"');
+        vOut +=" "+Math.round(pRec.value);
         vOut +="\"";
       }
     };
