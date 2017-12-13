@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <name>OpenLayers Map Data</name>
+        <atom:author>
+            <atom:name>Generator openlayer_heatmap </atom:name>
+        </atom:author>
+        <atom:link href="https://niebert.github.io/openlayer_heatmap"/>
+        <Folder>
+            <name>OpenLayers HeatMap</name>
+{{{mapobjects}}}
+        </Folder>
+    </Document>
+</kml>

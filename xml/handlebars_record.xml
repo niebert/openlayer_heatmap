@@ -1,0 +1,8 @@
+            <Placemark id="{{id}}">
+              <name>{{title}}</name>
+              <summary>{{summary}}</summary>
+              <mapvalue>{{value}}</mapvalue>
+              <Point>
+                  <coordinates>{{lng}},{{lat}}</coordinates>
+              </Point>
+            </Placemark>

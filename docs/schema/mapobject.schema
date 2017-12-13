@@ -1,0 +1,94 @@
+vDataJSON["mapobject"] = {
+	"type": "object",
+	"title": "Markers4Map",
+	"headerTemplate": "Icon: {{ self.title}}",
+	"type": "object",
+    "id": "https://niebert.github.io/json-editor",
+    "defaultProperties": [
+        "id",
+        "lat",
+        "lng",
+        "title",
+				"summary",
+				"value",
+        "has_detail_page",
+        "webpage"
+    ],
+	"properties": {
+		"id": {
+            "type": "string",
+            "id": "/properties/id",
+            "title": "ID",
+            "default": "",
+            "format": "text",
+            "description": "Unique ID for all icons"
+        },
+				"title": {
+            "type": "string",
+            "id": "/properties/title",
+            "title": "Title",
+            "default": "",
+            "format": "text",
+            "description": "Title displayed for the Marker in OpenLayers."
+        },
+				"summary": {
+            "type": "string",
+            "id": "/properties/summary",
+            "title": "Summary",
+            "default": "",
+            "format": "text",
+            "description": "Summary describes the location"
+        },
+        "lat": {
+            "type": "string",
+            "id": "/properties/lat",
+            "title": "Latitude",
+            "default": "",
+            "format": "text",
+            "description": "Latitude of Geolocation."
+        },
+				"lng": {
+            "type": "string",
+            "id": "/properties/lng",
+            "title": "Longitude",
+            "default": "",
+            "format": "text",
+            "description": "Longtitude of Geolocation."
+        },
+				"value": {
+            "type": "number",
+            "id": "/properties/value",
+            "title": "Value",
+            "default": 1.0,
+            "description": "Assign this value to Geolocation."
+        },
+        "has_detail_page": {
+            "type": "string",
+            "id": "/properties/has_detail_page",
+            "title": "Info Website exists:",
+  		    "enum": [
+        		  "0",
+          		"1"
+          	],
+          	 "options": {
+       		   "enum_titles": [
+            		"No",
+            		"Yes"
+            	]
+       		},
+            "default": "0",
+            "format": "text",
+            "description": "If set to yes the URL mentioned below will be clickable in the Map Icon. Set to no (0) the URL is not available after clicking on the Map Icon."
+        },
+        "webpage": {
+            "type": "string",
+            "id": "/properties/webpage",
+            "title": "URL:",
+            "default": "",
+            "format": "text",
+            "description": "URL to webpage with additional information to geolocation/icon."
+        }
+ 	},
+  	"definitions": {
+  	}
+}
