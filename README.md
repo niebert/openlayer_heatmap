@@ -1,4 +1,4 @@
-# openlayer_heatmap
+# Heatmap Editor for OpenLayers
 Generate XML-Data for OpenLayers Heatmap based on JSON-Editor.
 
 ## [Demo HeatMap Editor](https://niebert.github.io/openlayer_heatmap/)
@@ -9,6 +9,11 @@ Generate XML-Data for OpenLayers Heatmap based on JSON-Editor.
 ## [Demo Markers Display](https://niebert.github.io/openlayer_display_markers/)
 
 ![Screenshot Display Markers](screenshot_display_markers.png)
+
+## Workflow to Create a Heatmap
+* [Download openlayer_heatmap.zip](https://github.com/niebert/openlayer_heatmap/archive/master.zip) and unzip to a folder of your choice (e.g. `Documents/openlayer_heatmap`).
+* Check out the example heatmap in (e.g. `Documents/openlayer_heatmap/HeatMap/index.html`)
+* Start [HeatMap Editor](https://niebert.github.io/openlayer_heatmap/)
 
 ## Derivative Works of OpenLayers: Icon Symbolizer
 The repository is based on the [OpenLayers example](http://openlayers.org/en/latest/examples/icon.html)
