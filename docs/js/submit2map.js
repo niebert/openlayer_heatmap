@@ -45,23 +45,11 @@ function getMarkerString(pNr,pRec) {
   if ((pRec.lat != "") && (pRec.lng != "")) {
     vOut += "{ \"geolocation\" : ["+pRec.lng+","+pRec.lat+"],";
     vOut += "\"name\" : \"";
-    vOut +="<b>";
-    if (pRec.webpage != "") {
-      vOut += "<a href=\\\""+pRec.webpage+"\\\" target=\\\"_blank\\\">"+pRec.title+"</a>";
-    } else {
-      vOut += pRec.title;
-    };
-    vOut +="</b>";
-    if (pRec.hasOwnProperty("summary")) {
-      if (pRec.summary != "") {
-        vOut +="<br>";
-        vOut += pRec.summary.replace(/"/g,'\"');
-        vOut +=" "+Math.round(pRec.value);
-        vOut +="\"";
-      }
-    };
+    vOut +="<b>"+ pRec.title + "</b>";
+    vOut +="<br>";
+    vOut +="Value " + Math.round(pRec.value);
+    vOut +="\""; // END of "name": " definition of marker text in popup"
     vOut +="}";
-
   } else {
     //console.log("("+pNr+") missing geolocation in record");
     alert("("+pNr+") missing geolocation in record");

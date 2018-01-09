@@ -77,7 +77,7 @@
     <textarea id="object-template" rows="10" cols="120"  style="display:none">
             &lt;Placemark id="{{id}}"&gt;
               &lt;name&gt;{{title}}&lt;/name&gt;
-              &lt;summary&gt;{{summary}} - {{value}}&lt;/summary&gt;
+              &lt;summary&gt;{{summary}} {{value}}&lt;/summary&gt;
               &lt;mapvalue&gt;{{value}}&lt;/mapvalue&gt;
               &lt;Point&gt;
                   &lt;coordinates&gt;{{lng}},{{lat}}&lt;/coordinates&gt;
@@ -140,7 +140,7 @@
             <form id="mapselector" action="https://niebert.github.io/openlayer_selectlocation/selectlocation.html" method="GET">
               <!-- Set the Callback URL for the OpenLayers location selector here: -->
               <!-- <input type="string" name="callback" value="../Markers4Map/index.html" style="display:none"> -->
-              <input type="string" name="callback" value="https://niebert.github.io/Markers4Map/index.html" style="display:none">
+              <input type="string" name="callback" value="https://niebert.github.io/openlayers_heatmap/index.html" style="display:none">
               <b>Map Center:</b>
               <input type="string" name="mapcenter" id="mymapcenter" size="30" value="-1.81185, 52.443141">
               &nbsp;
